@@ -1,0 +1,77 @@
+[
+  {
+    "term": "アクセス制御",
+    "meaning": "リソースへのアクセスを制限し、権限に基づいて管理する仕組み",
+    "category": "security"
+  },
+  {
+    "term": "アルゴリズム",
+    "meaning": "問題を解決するための手順や計算方法を定義した一連の手続き",
+    "category": "fundamentals"
+  },
+  {
+    "term": "暗号化",
+    "meaning": "データを第三者に読み取られないよう、特定の規則で変換すること",
+    "category": "security"
+  },
+  {
+    "term": "インターフェース",
+    "meaning": "システムやプログラム同士が情報をやり取りするための接続部分",
+    "category": "fundamentals"
+  },
+  {
+    "term": "ウォーターフォール",
+    "meaning": "要件定義から運用まで、各工程を順番に進めていく開発手法",
+    "category": "development"
+  },
+  {
+    "term": "オブジェクト指向",
+    "meaning": "データと処理を一つのオブジェクトとしてまとめるプログラミングの考え方",
+    "category": "development"
+  },
+  {
+    "term": "仮想化",
+    "meaning": "物理的なハードウェアを論理的に分割し、複数の仮想環境を作り出す技術",
+    "category": "infrastructure"
+  },
+  {
+    "term": "関数型言語",
+    "meaning": "数学的な関数の概念を基本としたプログラミング言語",
+    "category": "development"
+  },
+  {
+    "term": "クラウドコンピューティング",
+    "meaning": "インターネットを通じてコンピューティングリソースを提供するサービス",
+    "category": "infrastructure"
+  },
+  {
+    "term": "クロスサイトスクリプティング",
+    "meaning": "Webアプリケーションの脆弱性を利用して悪意のあるスクリプトを実行する攻撃",
+    "category": "security"
+  },
+  {
+    "term": "コンパイラ",
+    "meaning": "プログラミング言語で書かれたコードを機械語に変換するプログラム",
+    "category": "development"
+  },
+  {
+    "term": "サービス指向アーキテクチャ",
+    "meaning": "ソフトウェアの機能を独立したサービスとして提供する設計手法",
+    "category": "infrastructure"
+  },
+  {
+    "term": "冗長化",
+    "meaning": "システムの信頼性を高めるため、重要な機能を複数用意すること",
+    "category": "infrastructure"
+  },
+  {
+    "term": "スクラム",
+    "meaning": "短い期間で繰り返し開発を行う、アジャイル開発の手法の一つ",
+    "category": "development"
+  },
+  {
+    "term": "正規化",
+    "meaning": "データベースの無駄を省き、整合性を保つためにテーブルを整理すること",
+    "category": "database"
+  }
+]

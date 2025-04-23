@@ -1,0 +1,152 @@
+[
+  {
+    "term": "apple",
+    "meaning": "甘くて赤い果物。ビタミンが豊富。",
+    "category": "食"
+  },
+  {
+    "term": "banana",
+    "meaning": "黄色い果物で、エネルギー補給に良い。",
+    "category": "食"
+  },
+  {
+    "term": "bread",
+    "meaning": "小麦から作られる主食のひとつ。",
+    "category": "食"
+  },
+  {
+    "term": "cheese",
+    "meaning": "牛乳を発酵させて作る乳製品。",
+    "category": "食"
+  },
+  {
+    "term": "salmon",
+    "meaning": "ピンク色の身を持つ魚。寿司にも使われる。",
+    "category": "食"
+  },
+  {
+    "term": "curry",
+    "meaning": "スパイスで味付けされた煮込み料理。",
+    "category": "食"
+  },
+  {
+    "term": "pasta",
+    "meaning": "イタリア料理で使われる小麦製の麺。",
+    "category": "食"
+  },
+  {
+    "term": "diabetes",
+    "meaning": "血糖値が高くなる慢性的な病気。",
+    "category": "病名"
+  },
+  {
+    "term": "asthma",
+    "meaning": "呼吸が苦しくなる発作性の疾患。",
+    "category": "病名"
+  },
+  {
+    "term": "flu",
+    "meaning": "インフルエンザウイルスによる感染症。",
+    "category": "病名"
+  },
+  {
+    "term": "headache",
+    "meaning": "頭が痛くなる症状。",
+    "category": "病名"
+  },
+  {
+    "term": "allergy",
+    "meaning": "体が特定の物質に過敏に反応する状態。",
+    "category": "病名"
+  },
+  {
+    "term": "cancer",
+    "meaning": "細胞が異常増殖する重篤な病気。",
+    "category": "病名"
+  },
+  {
+    "term": "cold",
+    "meaning": "風邪。ウイルスによる軽い感染症。",
+    "category": "病名"
+  },
+  {
+    "term": "laptop",
+    "meaning": "持ち運び可能なコンピュータ。",
+    "category": "日常"
+  },
+  {
+    "term": "bottle",
+    "meaning": "液体を入れるための容器。",
+    "category": "日常"
+  },
+  {
+    "term": "phone",
+    "meaning": "通話やメッセージができる携帯機器。",
+    "category": "日常"
+  },
+  {
+    "term": "clock",
+    "meaning": "時刻を表示する装置。",
+    "category": "日常"
+  },
+  {
+    "term": "wallet",
+    "meaning": "お金やカードを入れる小物。",
+    "category": "日常"
+  },
+  {
+    "term": "shoes",
+    "meaning": "足を保護するための履物。",
+    "category": "日常"
+  },
+  {
+    "term": "glasses",
+    "meaning": "視力矯正や紫外線防止のための道具。",
+    "category": "日常"
+  },
+  {
+    "term": "car",
+    "meaning": "人や物を運ぶための乗り物。",
+    "category": "日常"
+  },
+  {
+    "term": "umbrella",
+    "meaning": "雨を防ぐために使う道具。",
+    "category": "日常"
+  },
+  {
+    "term": "pen",
+    "meaning": "文字を書くための道具。",
+    "category": "日常"
+  },
+  {
+    "term": "book",
+    "meaning": "読み物。情報や物語が書かれている媒体。",
+    "category": "日常"
+  },
+  {
+    "term": "hospital",
+    "meaning": "病気の診察や治療を行う施設。",
+    "category": "病名"
+  },
+  {
+    "term": "doctor",
+    "meaning": "病気を診断・治療する専門家。",
+    "category": "病名"
+  },
+  {
+    "term": "pizza",
+    "meaning": "チーズや具を乗せて焼いたイタリア料理。",
+    "category": "食"
+  },
+  {
+    "term": "noodles",
+    "meaning": "麺状の食べ物。ラーメンやうどんも含まれる。",
+    "category": "食"
+  },
+  {
+    "term": "milk",
+    "meaning": "牛から採れる白い飲み物。カルシウムが豊富。",
+    "category": "食"
+  }
+]
