@@ -107,6 +107,7 @@ const EnglishQuiz: React.FC<QuizProps> = ({ darkMode }) => {
             selectedCategory={selectedCategory}
             onCategoryChange={handleCategoryChange}
             darkMode={darkMode}
+            isEnglishQuiz={true}
           />
           <ScoreDisplay score={score} darkMode={darkMode} />
         </div>
