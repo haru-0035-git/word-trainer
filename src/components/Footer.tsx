@@ -11,7 +11,7 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
         darkMode ? "text-slate-400" : "text-slate-500"
       }`}
     >
-      <p className="text-xs mt-2">© {new Date().getFullYear()} クイズアプリ</p>
+      <p className="text-xs mt-2">© {new Date().getFullYear()} Word Trainer</p>
     </footer>
   );
 };
