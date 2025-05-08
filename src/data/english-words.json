@@ -55,8 +55,98 @@
     "category": "病名"
   },
   {
+    "term": "fever",
+    "meaning": "体温が異常に上昇する状態。",
+    "category": "病名"
+  },
+  {
+    "term": "stomachache",
+    "meaning": "お腹が痛くなる症状。",
+    "category": "病名"
+  },
+  {
+    "term": "toothache",
+    "meaning": "歯が痛くなる症状。",
+    "category": "病名"
+  },
+  {
+    "term": "back pain",
+    "meaning": "背中や腰が痛くなる症状。",
+    "category": "病名"
+  },
+  {
     "term": "allergy",
-    "meaning": "体が特定の物質に過敏に反応する状態。",
+    "meaning": "アレルギー。特定の物質に過敏に反応する状態。",
+    "category": "病名"
+  },
+  {
+    "term": "insomnia",
+    "meaning": "眠れない状態。",
+    "category": "病名"
+  },
+  {
+    "term": "arthritis",
+    "meaning": "関節が炎症を起こす病気。",
+    "category": "病名"
+  },
+  {
+    "term": "migraine",
+    "meaning": "片頭痛。激しい頭痛を伴う病気。",
+    "category": "病名"
+  },
+  {
+    "term": "eczema",
+    "meaning": "皮膚が赤くなり、かゆみを伴う状態。",
+    "category": "病名"
+  },
+  {
+    "term": "hypertension",
+    "meaning": "高血圧。血圧が異常に高い状態。",
+    "category": "病名"
+  },
+  {
+    "term": "depression",
+    "meaning": "気分が持続的に沈む状態。",
+    "category": "病名"
+  },
+  {
+    "term": "anxiety",
+    "meaning": "不安や心配を感じる状態。",
+    "category": "病名"
+  },
+  {
+    "term": "fatigue",
+    "meaning": "疲れやすくなる状態。",
+    "category": "病名"
+  },
+  {
+    "term": "nausea",
+    "meaning": "吐き気を感じる状態。",
+    "category": "病名"
+  },
+  {
+    "term": "diarrhea",
+    "meaning": "下痢。頻繁に水様便が出る状態。",
+    "category": "病名"
+  },
+  {
+    "term": "constipation",
+    "meaning": "便秘。便が出にくい状態。",
+    "category": "病名"
+  },
+  {
+    "term": "heart disease",
+    "meaning": "心臓に関連する病気。",
+    "category": "病名"
+  },
+  {
+    "term": "stroke",
+    "meaning": "脳の血管が詰まったり破れたりする状態。",
+    "category": "病名"
+  },
+  {
+    "term": "pneumonia",
+    "meaning": "肺の炎症。感染症が原因。",
     "category": "病名"
   },
   {
@@ -95,6 +185,141 @@
     "category": "日常"
   },
   {
+    "term": "bag",
+    "meaning": "物を入れるための容器。",
+    "category": "日常"
+  },
+  {
+    "term": "watch",
+    "meaning": "腕に付けて時刻を確認する道具。",
+    "category": "日常"
+  },
+  {
+    "term": "key",
+    "meaning": "鍵穴に差し込んで施錠・解錠する道具。",
+    "category": "日常"
+  },
+  {
+    "term": "backpack",
+    "meaning": "背負って持ち運ぶためのかばん。",
+    "category": "日常"
+  },
+  {
+    "term": "sunglasses",
+    "meaning": "紫外線から目を守るための眼鏡。",
+    "category": "日常"
+  },
+  {
+    "term": "scarf",
+    "meaning": "首や頭を温めるための布。",
+    "category": "日常"
+  },
+  {
+    "term": "hat",
+    "meaning": "頭を保護するための被り物。",
+    "category": "日常"
+  },
+  {
+    "term": "jacket",
+    "meaning": "上半身を覆うための衣類。",
+    "category": "日常"
+  },
+  {
+    "term": "pants",
+    "meaning": "下半身を覆うための衣類。",
+    "category": "日常"
+  },
+  {
+    "term": "shirt",
+    "meaning": "上半身を覆うための衣類。",
+    "category": "日常"
+  },
+  {
+    "term": "dress",
+    "meaning": "女性用の一体型の衣類。",
+    "category": "日常"
+  },
+  {
+    "term": "skirt",
+    "meaning": "女性用の下半身を覆う衣類。",
+    "category": "日常"
+  },
+  {
+    "term": "socks",
+    "meaning": "足を覆うための布製品。",
+    "category": "日常"
+  },
+  {
+    "term": "belt",
+    "meaning": "ズボンを固定するための帯。",
+    "category": "日常"
+  },
+  {
+    "term": "tie",
+    "meaning": "首に巻いて結ぶ装飾品。",
+    "category": "日常"
+  },
+  {
+    "term": "sweater",
+    "meaning": "暖かい素材で作られた上着。",
+    "category": "日常"
+  },
+  {
+    "term": "shorts",
+    "meaning": "膝上までの丈のズボン。",
+    "category": "日常"
+  },
+  {
+    "term": "sandals",
+    "meaning": "足を覆うための軽い履物。",
+    "category": "日常"
+  },
+  {
+    "term": "boots",
+    "meaning": "足首以上を覆うための履物。",
+    "category": "日常"
+  },
+  {
+    "term": "sneakers",
+    "meaning": "運動用の軽い靴。",
+    "category": "日常"
+  },
+  {
+    "term": "flip-flops",
+    "meaning": "ビーチやプールで使う軽い履物。",
+    "category": "日常"
+  },
+  {
+    "term": "sweatpants",
+    "meaning": "運動やリラックス用のズボン。",
+    "category": "日常"
+  },
+  {
+    "term": "sweatshirt",
+    "meaning": "カジュアルな上着。",
+    "category": "日常"
+  },
+  {
+    "term": "pajamas",
+    "meaning": "寝るときに着る衣類。",
+    "category": "日常"
+  },
+  {
+    "term": "gloves",
+    "meaning": "手を覆うための布製品。",
+    "category": "日常"
+  },
+  {
+    "term": "umbrella",
+    "meaning": "雨を防ぐための道具。",
+    "category": "日常"
+  },
+  {
+    "term": "suit",
+    "meaning": "ビジネスシーンで着るフォーマルな衣類。",
+    "category": "日常"
+  },
+  {
     "term": "shoes",
     "meaning": "足を保護するための履物。",
     "category": "日常"
@@ -107,11 +332,6 @@
   {
     "term": "car",
     "meaning": "人や物を運ぶための乗り物。",
-    "category": "日常"
-  },
-  {
-    "term": "umbrella",
-    "meaning": "雨を防ぐために使う道具。",
     "category": "日常"
   },
   {
@@ -145,8 +365,423 @@
     "category": "食"
   },
   {
+    "term": "rice",
+    "meaning": "主食として広く食べられる穀物。",
+    "category": "食"
+  },
+  {
+    "term": "vegetable",
+    "meaning": "植物の一部を食用とする食品。",
+    "category": "食"
+  },
+  {
+    "term": "fruit",
+    "meaning": "植物の果実を食用とする食品。",
+    "category": "食"
+  },
+  {
+    "term": "soup",
+    "meaning": "液体状の料理。具材が入っていることが多い。",
+    "category": "食"
+  },
+  {
+    "term": "sandwich",
+    "meaning": "パンに具材を挟んだ料理。",
+    "category": "食"
+  },
+  {
+    "term": "burger",
+    "meaning": "パンに肉や野菜を挟んだ料理。",
+    "category": "食"
+  },
+  {
+    "term": "pancake",
+    "meaning": "薄い生地を焼いた甘い料理。",
+    "category": "食"
+  },
+  {
+    "term": "juice",
+    "meaning": "果物や野菜を絞った飲み物。",
+    "category": "食"
+  },
+  {
+    "term": "tea",
+    "meaning": "茶葉を煮出して作る飲み物。",
+    "category": "食"
+  },
+  {
+    "term": "coffee",
+    "meaning": "コーヒー豆を煮出して作る飲み物。",
+    "category": "食"
+  },
+  {
+    "term": "sugar",
+    "meaning": "甘味料として使われる白い結晶。",
+    "category": "食"
+  },
+  {
+    "term": "salt",
+    "meaning": "料理に使う調味料。",
+    "category": "食"
+  },
+  {
+    "term": "pepper",
+    "meaning": "香辛料として使われる粉末。",
+    "category": "食"
+  },
+  {
     "term": "milk",
     "meaning": "牛から採れる白い飲み物。カルシウムが豊富。",
     "category": "食"
+  },
+  {
+    "term": "orange",
+    "meaning": "甘くて酸っぱい果物。ビタミンCが豊富。",
+    "category": "食"
+  },
+  {
+    "term": "chicken",
+    "meaning": "鶏肉。焼き物や煮物に使われる。",
+    "category": "食"
+  },
+  {
+    "term": "fish",
+    "meaning": "水中に生息する動物。食用として人気。",
+    "category": "食"
+  },
+  {
+    "term": "potato",
+    "meaning": "根菜で、フライドポテトやマッシュポテトに使われる。",
+    "category": "食"
+  },
+  {
+    "term": "cake",
+    "meaning": "甘い生地で作られたデザート。",
+    "category": "食"
+  },
+  {
+    "term": "sushi",
+    "meaning": "酢飯に魚や野菜を乗せた日本料理。",
+    "category": "食"
+  },
+  {
+    "term": "cookie",
+    "meaning": "甘い焼き菓子。チョコチップクッキーが有名。",
+    "category": "食"
+  },
+  {
+    "term": "ice cream",
+    "meaning": "冷たいデザート。様々なフレーバーがある。",
+    "category": "食"
+  },
+  {
+    "term": "salad",
+    "meaning": "生野菜を使った料理。ドレッシングで味付けされる。",
+    "category": "食"
+  },
+  {
+    "term": "soda",
+    "meaning": "炭酸飲料。甘い味付けがされていることが多い。",
+    "category": "食"
+  },
+  {
+    "term": "chocolate",
+    "meaning": "カカオから作られる甘いお菓子。",
+    "category": "食"
+  },
+  {
+    "term": "grapefruit",
+    "meaning": "苦味と酸味のある果物。ビタミンCが豊富。",
+    "category": "食"
+  },
+  {
+    "term": "watermelon",
+    "meaning": "夏に人気のある大きな果物。水分が多い。",
+    "category": "食"
+  },
+  {
+    "term": "onion",
+    "meaning": "料理に風味を加えるために使われる野菜。",
+    "category": "食"
+  },
+  {
+    "term": "tomato",
+    "meaning": "赤い果物で、サラダやソースに使われる。",
+    "category": "食"
+  },
+  {
+    "term": "cucumber",
+    "meaning": "サラダによく使われる緑の野菜。",
+    "category": "食"
+  },
+  {
+    "term": "broccoli",
+    "meaning": "緑色の花野菜。栄養価が高い。",
+    "category": "食"
+  },
+  {
+    "term": "peach",
+    "meaning": "甘くて柔らかい果物。夏に人気。",
+    "category": "食"
+  },
+  {
+    "term": "pear",
+    "meaning": "甘くてジューシーな果物。",
+    "category": "食"
+  },
+  {
+    "term": "kiwi",
+    "meaning": "緑色の果肉を持つ小さな果物。",
+    "category": "食"
+  },
+  {
+    "term": "mango",
+    "meaning": "甘くてジューシーなトロピカルフルーツ。",
+    "category": "食"
+  },
+  {
+    "term": "pineapple",
+    "meaning": "甘酸っぱいトロピカルフルーツ。",
+    "category": "食"
+  },
+  {
+    "term": "strawberry",
+    "meaning": "甘酸っぱい赤い果物。ケーキなどにも使われる。",
+    "category": "食"
+  },
+  {
+    "term": "lettuce",
+    "meaning": "サラダによく使われる緑の葉野菜。",
+    "category": "食"
+  },
+  {
+    "term": "steak",
+    "meaning": "厚切りの焼いた肉料理。牛肉が一般的。",
+    "category": "食"
+  },
+  {
+    "term": "grape",
+    "meaning": "紫や緑の小さな果実。ワインの原料。",
+    "category": "食"
+  },
+  {
+    "term": "yogurt",
+    "meaning": "乳酸菌で発酵させた乳製品。健康食品として人気。",
+    "category": "食"
+  },
+  {
+    "term": "carrot",
+    "meaning": "オレンジ色の根菜。ビタミンAが豊富。",
+    "category": "食"
+  },
+  {
+    "term": "eggplant",
+    "meaning": "紫色の野菜で、煮物や焼き物に使われる。",
+    "category": "食"
+  },
+  {
+    "term": "chair",
+    "meaning": "座るための家具。背もたれがあることが多い。",
+    "category": "日常"
+  },
+  {
+    "term": "mirror",
+    "meaning": "自分の姿を映す道具。ガラスに反射材を塗ったもの。",
+    "category": "日常"
+  },
+  {
+    "term": "towel",
+    "meaning": "体や物を拭くための布。",
+    "category": "日常"
+  },
+  {
+    "term": "soap",
+    "meaning": "手や体を洗うために使う洗浄用品。",
+    "category": "日常"
+  },
+  {
+    "term": "pillow",
+    "meaning": "寝るときに頭を支えるためのクッション。",
+    "category": "日常"
+  },
+  {
+    "term": "blanket",
+    "meaning": "体を覆って温めるための厚手の布。",
+    "category": "日常"
+  },
+  {
+    "term": "suitcase",
+    "meaning": "旅行時に衣類などを入れるためのかばん。",
+    "category": "日常"
+  },
+  {
+    "term": "window",
+    "meaning": "建物や車などにある外を見たり換気するための開口部。",
+    "category": "日常"
+  },
+  {
+    "term": "teacher",
+    "meaning": "学生や生徒に知識を教える職業。",
+    "category": "職"
+  },
+  {
+    "term": "engineer",
+    "meaning": "技術や設計を専門とする職業。",
+    "category": "職"
+  },
+  {
+    "term": "nurse",
+    "meaning": "病院などで患者のケアを行う医療従事者。",
+    "category": "職"
+  },
+  {
+    "term": "pilot",
+    "meaning": "飛行機を操縦する専門職。",
+    "category": "職"
+  },
+  {
+    "term": "chef",
+    "meaning": "料理を作るプロフェッショナルな料理人。",
+    "category": "職"
+  },
+  {
+    "term": "cashier",
+    "meaning": "店でレジ業務を担当する職種。",
+    "category": "職"
+  },
+  {
+    "term": "police officer",
+    "meaning": "治安を守るために活動する公的職員。",
+    "category": "職"
+  },
+  {
+    "term": "driver",
+    "meaning": "車両を運転する人。職業運転手を含む。",
+    "category": "職"
+  },
+  {
+    "term": "firefighter",
+    "meaning": "火災の消火や救助活動を行う職業。",
+    "category": "職"
+  },
+  {
+    "term": "waiter",
+    "meaning": "飲食店で料理や飲み物を運ぶ職業。",
+    "category": "職"
+  },
+  {
+    "term": "cleaner",
+    "meaning": "建物や部屋を清掃する職業。",
+    "category": "職"
+  },
+  {
+    "term": "artist",
+    "meaning": "絵画や彫刻などの芸術作品を創作する人。",
+    "category": "職"
+  },
+  {
+    "term": "mailman",
+    "meaning": "郵便物を配達する職業。",
+    "category": "職"
+  },
+  {
+    "term": "scientist",
+    "meaning": "科学的な研究を行う専門家。",
+    "category": "職"
+  },
+  {
+    "term": "accountant",
+    "meaning": "財務や会計を管理する専門職。",
+    "category": "職"
+  },
+  {
+    "term": "lawyer",
+    "meaning": "法律に基づいて人々を助ける専門家。",
+    "category": "職"
+  },
+  {
+    "term": "architect",
+    "meaning": "建物の設計を行う専門職。",
+    "category": "職"
+  },
+  {
+    "term": "journalist",
+    "meaning": "ニュースや情報を取材・報道する職業。",
+    "category": "職"
+  },
+  {
+    "term": "photographer",
+    "meaning": "写真を撮影する専門家。",
+    "category": "職"
+  },
+  {
+    "term": "musician",
+    "meaning": "音楽を演奏または作曲する人。",
+    "category": "職"
+  },
+  {
+    "term": "actor",
+    "meaning": "映画や舞台で演技をする職業。",
+    "category": "職"
+  },
+  {
+    "term": "writer",
+    "meaning": "文章を書く職業。小説家やライターなど。",
+    "category": "職"
+  },
+  {
+    "term": "farmer",
+    "meaning": "農業を営む人。作物を育てる。",
+    "category": "職"
+  },
+  {
+    "term": "mechanic",
+    "meaning": "機械の修理や整備を行う専門家。",
+    "category": "職"
+  },
+  {
+    "term": "electrician",
+    "meaning": "電気設備の設置や修理を行う専門家。",
+    "category": "職"
+  },
+  {
+    "term": "plumber",
+    "meaning": "水道設備の設置や修理を行う専門家。",
+    "category": "職"
+  },
+  {
+    "term": "hairdresser",
+    "meaning": "髪をカットやスタイリングする専門家。",
+    "category": "職"
+  },
+  {
+    "term": "dentist",
+    "meaning": "歯科医師。歯の治療や予防を行う専門家。",
+    "category": "職"
+  },
+  {
+    "term": "veterinarian",
+    "meaning": "動物の健康を診断・治療する専門家。",
+    "category": "職"
+  },
+  {
+    "term": "pharmacist",
+    "meaning": "薬剤を調剤し、患者に提供する専門家。",
+    "category": "職"
+  },
+  {
+    "term": "librarian",
+    "meaning": "図書館で本や資料を管理する職業。",
+    "category": "職"
+  },
+  {
+    "term": "waitress",
+    "meaning": "飲食店で料理や飲み物を運ぶ女性の職業。",
+    "category": "職"
+  },
+  {
+    "term": "baker",
+    "meaning": "パンやお菓子を焼く職業。",
+    "category": "職"
   }
 ]
