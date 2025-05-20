@@ -5,10 +5,13 @@ import Quiz from "./components/Quiz";
 import EnglishQuiz from "./components/EnglishQuiz";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [loggedInUser, setLoggedInUser] = useState(null);
+  // const [loginMessage, setLoginMessage] = useState("");
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -22,23 +25,50 @@ function App() {
     setIsMenuOpen(false);
   };
 
+  const handleLogout = () => {
+    setLoggedInUser(null);
+    console.log("ログアウトしました。");
+  };
+
   return (
     <Router>
       <div
-        className={`min-h-screen ${
+        className={`min-h-screen flex flex-col ${
           darkMode
             ? "dark bg-slate-900"
             : "bg-gradient-to-br from-orange-50 via-white to-orange-100"
         } transition-colors duration-300`}
       >
+        {/* {loginMessage && (
+          <div className="fixed top-0 left-0 w-full bg-green-500 text-white text-center py-2">
+            {loginMessage}
+          </div>
+        )} */}
         <header className="bg-gradient-to-r from-orange-400 to-orange-300 text-white shadow-lg relative">
           <div className="flex justify-between items-center px-6 py-4">
-            <Link
-              to="/"
-              className="text-2xl font-bold hover:text-orange-100 transition-colors"
-            >
-              Word Trainer
-            </Link>
+            <div className="flex items-center">
+              <Link
+                to="/"
+                className="text-2xl font-bold hover:text-orange-100 transition-colors"
+              >
+                Word Trainer
+              </Link>
+            </div>
+            {loggedInUser ? (
+              <button
+                onClick={handleLogout}
+                className="ml-auto px-4 py-2 bg-red-400 text-white rounded-md hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-300 focus:ring-offset-2"
+              >
+                ログアウト
+              </button>
+            ) : (
+              <Link
+                to="/login"
+                className="ml-auto px-4 py-2 bg-orange-400 text-white rounded-md hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2"
+              >
+                ログイン
+              </Link>
+            )}
             <button
               onClick={toggleMenu}
               className="p-2 rounded-lg hover:bg-orange-500/20 transition-colors"
@@ -139,7 +169,7 @@ function App() {
           </div>
         </header>
 
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-8 flex-grow">
           <main className="mt-8">
             <Routes>
               <Route path="/" element={<Home darkMode={darkMode} />} />
@@ -148,8 +178,14 @@ function App() {
                 path="/english-quiz"
                 element={<EnglishQuiz darkMode={darkMode} />}
               />
+              <Route
+                path="/login"
+                element={<Login setLoggedInUser={setLoggedInUser} />}
+              />
             </Routes>
           </main>
+        </div>
+        <div className="mt-auto">
           <Footer darkMode={darkMode} />
         </div>
       </div>
