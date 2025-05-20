@@ -17,7 +17,7 @@ function Login({ setLoggedInUser }: { setLoggedInUser: (user: any) => void }) {
     }
 
     if (password.length < 6) {
-      setError("パスワードは8文字以上である必要があります。");
+      setError("パスワードは5文字以上である必要があります。");
       return;
     }
 
