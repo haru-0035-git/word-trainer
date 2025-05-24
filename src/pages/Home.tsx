@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { BookOpen, Globe } from "lucide-react";
 
@@ -7,6 +7,19 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = ({ darkMode }) => {
+  const [loginMessage, setLoginMessage] = useState("");
+
+  useEffect(() => {
+    const message = localStorage.getItem("loginMessage");
+    if (message) {
+      setLoginMessage(message);
+      setTimeout(() => {
+        setLoginMessage("");
+        localStorage.removeItem("loginMessage");
+      }, 3000); // 3秒後にメッセージを消す
+    }
+  }, []);
+
   return (
     <div className="container mx-auto px-4 py-12 text-center">
       <div
@@ -14,6 +27,11 @@ const Home: React.FC<HomeProps> = ({ darkMode }) => {
           darkMode ? "text-white" : "text-gray-800"
         }`}
       >
+        {loginMessage && (
+          <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-64 h-16 bg-green-500 text-white flex items-center justify-center rounded-full shadow-lg z-50">
+            {loginMessage}
+          </div>
+        )}
         <div className="flex items-center justify-center mb-6">
           <BookOpen
             className={`mr-3 ${

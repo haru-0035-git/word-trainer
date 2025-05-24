@@ -12,6 +12,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [loggedInUser, setLoggedInUser] = useState(null);
+  const [logoutMessage, setLogoutMessage] = useState("");
 
   useEffect(() => {
     const savedUser = localStorage.getItem("loggedInUser");
@@ -33,9 +34,13 @@ function App() {
   };
 
   const handleLogout = () => {
-    setLoggedInUser(null);
-    localStorage.removeItem("loggedInUser");
-    console.log("ログアウトしました。");
+    const confirmLogout = window.confirm("本当にログアウトしますか？");
+    if (confirmLogout) {
+      setLoggedInUser(null);
+      localStorage.removeItem("loggedInUser");
+      setLogoutMessage("ログアウトしました。");
+      setTimeout(() => setLogoutMessage(""), 3000); // 3秒後にメッセージを消す
+    }
   };
 
   return (
@@ -47,11 +52,11 @@ function App() {
             : "bg-gradient-to-br from-orange-50 via-white to-orange-100"
         } transition-colors duration-300`}
       >
-        {/* {loginMessage && (
-          <div className="fixed top-0 left-0 w-full bg-green-500 text-white text-center py-2">
-            {loginMessage}
+        {logoutMessage && (
+          <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-64 h-16 bg-red-500 text-white flex items-center justify-center rounded-full shadow-lg z-50">
+            {logoutMessage}
           </div>
-        )} */}
+        )}
         <header>
           <Header
             darkMode={darkMode}

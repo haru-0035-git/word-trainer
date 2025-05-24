@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AuthUser from "../components/AuthUser";
 
 function Login({
@@ -12,13 +12,16 @@ function Login({
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [loginMessage, setLoginMessage] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     const savedUser = localStorage.getItem("loggedInUser");
     if (savedUser) {
       setLoggedInUser(JSON.parse(savedUser));
+      navigate("/"); // Redirect to home if already logged in
     }
-  }, [setLoggedInUser]);
+  }, [setLoggedInUser, navigate]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -45,8 +48,13 @@ function Login({
 
     setLoggedInUser(result.data); // Save the logged-in user
     localStorage.setItem("loggedInUser", JSON.stringify(result.data)); // Save login state in localStorage
-    showLoginMessage(); // Display login success message
-    // Redirect or perform post-login actions here
+    setLoginMessage("ログインに成功しました！");
+    localStorage.setItem("loginMessage", "ログインに成功しました！"); // Save message to localStorage
+    setTimeout(() => {
+      setLoginMessage("");
+      localStorage.removeItem("loginMessage"); // Clear message from localStorage
+    }, 3000); // 3秒後にメッセージを消す
+    navigate("/"); // Redirect to home
   };
 
   return (
@@ -57,6 +65,11 @@ function Login({
           : "bg-gradient-to-br from-orange-50 via-white to-orange-100"
       }`}
     >
+      {loginMessage && (
+        <div className="fixed top-0 left-0 w-full bg-green-500 text-white text-center py-2 z-50 overflow-hidden">
+          {loginMessage}
+        </div>
+      )}
       <form
         onSubmit={handleSubmit}
         className={`p-8 rounded-lg shadow-lg w-full max-w-md ${
@@ -146,10 +159,6 @@ function Login({
       </form>
     </div>
   );
-}
-
-function showLoginMessage() {
-  alert("ログインに成功しました！");
 }
 
 export default Login;
