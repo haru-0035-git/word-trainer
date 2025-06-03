@@ -1,90 +1,103 @@
-import supabase from "../utils/Utilsupabase";
-import { useEffect } from "react";
+// InsertScore 関数の修正案 (TypeScript) - console.log を削除
 
-async function InsertUser(user: string, password: string) {
-  // Check if the user already exists
-  const { data: existingUser, error: fetchError } = await supabase
-    .from("users")
-    .select("user")
-    .eq("user", user)
-    .single();
+import supabase from "../utils/Utilsupabase"; // Supabaseクライアントをインポート
+
+// quizName から quizId を取得するヘルパー関数 (これは別途実装または既存のものを使用)
+// 例: async function getQuizIdByName(name: string): Promise<string | null> { ... }
+
+async function InsertScore(
+  scoreValue: number,
+  scoreTotalValue: number,
+  userId: string | null,
+  quizName: string
+): Promise<void> {
+  if (!userId) {
+    console.warn(
+      "InsertScore - Warning: userId が null のため、スコア処理をスキップします。"
+    );
+    return;
+  }
+
+  let quizId: string | null = null;
+  try {
+    const { data: quizData, error: quizError } = await supabase
+      .from("quiz") // あなたのクイズテーブル名
+      .select("id")
+      .eq("name", quizName)
+      .single(); // クイズ名はユニークであると仮定
+
+    if (quizError) throw quizError;
+    if (!quizData) throw new Error(`Quiz with name "${quizName}" not found.`);
+    quizId = quizData.id;
+  } catch (error) {
+    console.error(
+      `InsertScore - Error: クイズIDの取得に失敗しました (quizName: ${quizName}).`,
+      error
+    );
+    return;
+  }
+
+  if (!quizId) {
+    console.error(
+      "InsertScore - Error: 有効な quizId が取得できませんでした。"
+    );
+    return;
+  }
+
+  const { data: existingScore, error: fetchError } = await supabase
+    .from("scores") // あなたのスコアテーブル名
+    .select("id")
+    .eq("user_id", userId)
+    .eq("quiz_id", quizId)
+    .maybeSingle();
 
   if (fetchError) {
-    return fetchError;
+    console.error(
+      "InsertScore - Error: 既存スコアの検索中にエラーが発生しました。",
+      fetchError
+    );
+    return;
   }
 
-  if (existingUser) {
-    return { error: "User already exists" };
-  }
-
-  // Insert the new user
-  const { error: insertError } = await supabase
-    .from("users")
-    .insert([{ user: user, password: password }]);
-
-  if (insertError) {
-    return insertError;
-  } else {
-    return { success: true };
-  }
-}
-
-async function InsertScore(score: number, userId: string) {
-  // Check if the user exists in the scores table
-  const { data: existingScore, error: fetchError } = await supabase
-    .from("scores")
-    .select("id, user_id")
-    .eq("user_id", userId)
-    .single();
-
-  if (fetchError && fetchError.code !== "PGRST116") {
-    // Ignore "No rows found" error
-    return fetchError;
-  }
+  const now = new Date();
 
   if (existingScore) {
-    // Update the existing score
     const { error: updateError } = await supabase
       .from("scores")
-      .update({ score: score })
-      .eq("user_id", userId);
+      .update({
+        score: scoreValue,
+        total_number: scoreTotalValue,
+        updated_at: now, // Supabaseの標準的な更新日時カラム (存在しない場合は削除)
+      })
+      .eq("user_id", userId)
+      .eq("quiz_id", quizId);
 
     if (updateError) {
-      return updateError;
-    } else {
-      return { success: "Score updated successfully" };
+      console.error(
+        "InsertScore - Error: スコアの更新中にエラーが発生しました。",
+        updateError
+      );
     }
   } else {
-    // Insert a new score
-    const { error: insertError } = await supabase
-      .from("scores")
-      .insert([{ score: score, user_id: userId }]);
+    const { error: insertError } = await supabase.from("scores").insert([
+      {
+        user_id: userId,
+        quiz_id: quizId,
+        score: scoreValue,
+        total_number: scoreTotalValue,
+        // created_at: now, // Supabaseが自動で設定する場合が多い
+        // updated_at: now, // 同上 (存在しない場合は削除)
+      },
+    ]);
 
     if (insertError) {
-      return insertError;
-    } else {
-      return { success: "Score inserted successfully" };
+      console.error(
+        "InsertScore - Error: 新規スコアの挿入中にエラーが発生しました。",
+        insertError
+      );
     }
   }
 }
 
-function useInsertOnEvents(score: number, userId: string) {
-  useEffect(() => {
-    const handleBeforeUnload = async () => {
-      await InsertScore(score, userId);
-    };
-
-    const timer = setTimeout(async () => {
-      await InsertScore(score, userId);
-    }, 60000); // 60秒後にデータを挿入
-
-    window.addEventListener("beforeunload", handleBeforeUnload);
-
-    return () => {
-      clearTimeout(timer);
-      window.removeEventListener("beforeunload", handleBeforeUnload);
-    };
-  }, [score, userId]);
-}
-
-export { InsertUser, InsertScore, useInsertOnEvents };
+// この関数をエクスポートする場合
+export { InsertScore };
